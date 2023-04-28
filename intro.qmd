@@ -1,0 +1,24 @@
+---
+title: "Introduction and Motivation"
+---
+
+## Motivation: Why make a package?
+
+## What the course will look like
+
+We will work together through developing a package, and at various steps along
+the way we will take detours to examine tools, processes, and package structure.
+
+We'll be live coding together
+
+## Course logistics
+
+### Code of Conduct
+
+### Schedule
+
+### Sticky notes
+
+### TAs
+
+### Note-taking

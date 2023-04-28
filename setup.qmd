@@ -1,0 +1,13 @@
+---
+title: "🤖 System Setup"
+---
+
+## R
+
+## IDE
+
+## Packages
+
+devtools, usethis, testthat
+
+## Version control

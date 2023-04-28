@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "📦 Fundamentals of R Package Development"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "Chapters"
+        menu:
+        - href: intro.qmd
+        - href: setup.qmd
+        - href: create-check.qmd
+        - href: description.qmd
+        - href: r-code.qmd
+
+
+format:
+  html:
+    theme: yeti
+    css: styles.css
+    toc: true
+
+
+
