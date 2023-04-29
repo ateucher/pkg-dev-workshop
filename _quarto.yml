@@ -8,7 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - text: "Chapters"
+      - text: "Modules"
         menu:
         - href: intro.qmd
         - href: setup.qmd
