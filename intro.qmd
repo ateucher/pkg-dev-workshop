@@ -1,5 +1,5 @@
 ---
-title: "Introduction and Motivation"
+title: "Introduction and motivation ✨ "
 ---
 
 ## Motivation: Why make a package?

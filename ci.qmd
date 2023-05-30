@@ -1,0 +1,3 @@
+---
+title: Automated checking with GitHub Actions 🦾
+---

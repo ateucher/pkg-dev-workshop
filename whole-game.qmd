@@ -1,0 +1,109 @@
+---
+title: "📦 <br>Fundamentals of Package Development"
+subtitle: The Whole Game 
+author: "Andy Teucher"
+format:
+  revealjs: 
+    theme: [simple, slides.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    footer: <https://r-pkgs.org>
+    margin: 0.07
+    code-link: true
+    code-line-numbers: false
+    height: 900
+    width: 1600
+execute:
+  echo: true
+  eval: false
+---
+
+# A sneak preview of our end goal
+
+## The **`metrify`** package
+
+- We will create a version controlled package called **`metrify`** with a remote repo on GitHub.
+
+\
+
+. . .
+
+**`metrify`** will be a package to convert imperial measurements to metric.
+
+## Explore **`metrify`**
+
+- [GitHub](https://github.com/ateucher/metrify)
+- [Website](https://ateucher.github.io/metrify/)
+
+\
+
+[GitHub](https://github.com/ateucher/metrify) is the package in "Source" form
+
+- main code in `R/`
+- documentation files in `man/` and `vignettes/`
+- DESCRIPTION
+
+## Step 0: Tools
+
+- `R >= 4.3.0`
+
+- ![](img/RStudio-Logo-Flat.png){style="vertical-align: middle;" width="180"}
+
+  (<https://posit.co/download/rstudio-desktop/>)
+
+- Packages: 
+
+  ```r
+  install.packages(
+    c("devtools", "roxygen2", "testthat", "rmarkdown")
+  )
+  ```
+
+## Step 1: Load devtools 📦
+
+\
+```{r}
+#| eval: true
+library(devtools)
+```
+\
+```{r}
+#| eval: true
+packageVersion("devtools")
+```
+
+- Upgrade if necessary!
+
+## Step 2: Create your 📦 
+
+```{r}
+create_package("~/Desktop/metrify")
+```
+
+::: {.small}
+
+```
+✔ Creating '/Users/andyteucher/Desktop/metrify/'
+✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
+✔ Creating 'R/'
+✔ Writing 'DESCRIPTION'
+Package: metrify
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R (parsed):
+    * Andy Teucher <andy.teucher@posit.co> [aut, cre] (<https://orcid.org/0000-0002-7840-692X>)
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+✔ Writing 'NAMESPACE'
+✔ Writing 'metrify.Rproj'
+✔ Adding '^metrify\\.Rproj$' to '.Rbuildignore'
+✔ Adding '.Rproj.user' to '.gitignore'
+✔ Adding '^\\.Rproj\\.user$' to '.Rbuildignore'
+✔ Opening '/Users/andyteucher/Desktop/metrify/' in new RStudio session
+✔ Setting active project to '<no active project>'
+```
+:::

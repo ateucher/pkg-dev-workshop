@@ -4,22 +4,36 @@ project:
 website:
   title: "📦 Fundamentals of R Package Development"
   navbar:
-    left:
+    background: secondary
+  sidebar:
+    search: true
+    contents:
       - href: index.qmd
         text: Home
       - about.qmd
-      - text: "Modules"
-        menu:
-        - href: intro.qmd
-        - href: setup.qmd
-        - href: create-check.qmd
-        - href: description.qmd
-        - href: r-code.qmd
-
+      - section: "Basics"
+        contents:
+          - intro.qmd
+          - setup.qmd
+          - understanding-pkgs.qmd
+      - section: "The Whole Game"
+        contents:
+          - create-check.qmd
+          - description.qmd
+          - r-code.qmd
+          - documentation.qmd
+          - test.qmd
+          - check.qmd
+      - href: dependencies.qmd
+      - href: ci.qmd
+      - href: share.qmd
+      - href: website.qmd
 
 format:
   html:
-    theme: yeti
+    theme:
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
 

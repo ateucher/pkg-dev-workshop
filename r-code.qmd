@@ -1,3 +1,5 @@
 ---
-title: R code
+title: R code 💻
 ---
+
+Don't put `library()` or `require()` in packages

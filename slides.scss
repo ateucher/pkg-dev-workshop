@@ -1,0 +1,49 @@
+/*-- scss:defaults --*/
+
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap';
+
+// use Atkinson Hyperlegible font if available
+$font-family-sans-serif: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: "Fira Code";
+
+
+// colors
+// $body-bg:
+// $body-color:
+// $link-color:
+// $selection-bg:
+// $code-block-bg:
+// $dark-bg-code-color:
+
+
+// headings
+//$presentation-heading-color:
+$presentation-font-size-root:	42px;
+
+$code-block-font-size: 0.9em;
+
+/*-- scss:rules --*/
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 1.5em;
+}
+
+.reveal .slide div.sourceCode {
+  // margin-bottom: 20px;
+  border: none;
+}
+
+.reveal pre code {
+  max-height: 700px;
+}
+
+
+.extrasmall {
+  font-size: 0.5em;
+}
+
+.small {
+  font-size: 0.7em;
+}

@@ -1,8 +1,16 @@
 ---
-title: "🤖 System Setup"
+title: "System Setup 🤖"
 ---
 
+## System
+
+<!-- 
+https://github.com/forwards/workshops/blob/master/package-dev-modules/Computing_requirements.md
+ -->
+
 ## R
+
+`use_devtools()`
 
 ## IDE
 
@@ -11,3 +19,4 @@ title: "🤖 System Setup"
 devtools, usethis, testthat
 
 ## Version control
+
