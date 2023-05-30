@@ -23,7 +23,13 @@ execute:
 
 ## The **`metrify`** package
 
-- We will create a version controlled package called **`metrify`** with a remote repo on GitHub.
+We will:
+
+- Create a called **`metrify`**
+- Use git to track our changes
+- Push the code to a repository on GitHub
+- Create tests for our functions
+- Create a documentation website
 
 \
 
@@ -40,9 +46,11 @@ execute:
 
 [GitHub](https://github.com/ateucher/metrify) is the package in "Source" form
 
-- main code in `R/`
-- documentation files in `man/` and `vignettes/`
+- Package code in `R/`
+- Function documentation files in `man/` 
+- Package vignettes in `vignettes/`
 - DESCRIPTION
+- NAMESPACE
 
 ## Step 0: Tools
 
@@ -84,7 +92,6 @@ create_package("~/Desktop/metrify")
 ::: {.small}
 
 ```
-✔ Creating '/Users/andyteucher/Desktop/metrify/'
 ✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
 ✔ Creating 'R/'
 ✔ Writing 'DESCRIPTION'
@@ -92,9 +99,10 @@ Package: metrify
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R (parsed):
-    * Andy Teucher <andy.teucher@posit.co> [aut, cre] (<https://orcid.org/0000-0002-7840-692X>)
+    * First Last <first.last@example.com> [aut, cre] (YOUR-ORCID-ID)
 Description: What the package does (one paragraph).
-License: MIT + file LICENSE
+License: `use_mit_license()`, `use_gpl3_license()` or friends to
+    pick a license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
