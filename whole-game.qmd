@@ -25,7 +25,7 @@ execute:
 
 We will:
 
-- Create a called **`metrify`**
+- Create a package called **`metrify`**
 - Use git to track our changes
 - Push the code to a repository on GitHub
 - Create tests for our functions
@@ -113,5 +113,31 @@ RoxygenNote: 7.2.3
 ✔ Adding '^\\.Rproj\\.user$' to '.Rbuildignore'
 ✔ Opening '/Users/andyteucher/Desktop/metrify/' in new RStudio session
 ✔ Setting active project to '<no active project>'
+```
+:::
+
+## Step 3: Use git `r fontawesome::fa("git-alt")`
+
+```r
+use_git()
+```
+\
+::: {.small}
+
+```
+✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
+✔ Initialising Git repo
+✔ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store', '.quarto' to '.gitignore'
+There are 5 uncommitted files:
+* '.gitignore'
+* '.Rbuildignore'
+* 'DESCRIPTION'
+* 'metrify.Rproj'
+* 'NAMESPACE'
+Is it ok to commit them?
+
+1: Absolutely not
+2: Not now
+3: Yeah
 ```
 :::
