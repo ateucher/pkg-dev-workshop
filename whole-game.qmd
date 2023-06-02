@@ -14,6 +14,7 @@ format:
     code-line-numbers: false
     height: 900
     width: 1600
+    highlight-style: a11y-dark
 execute:
   echo: true
   eval: false
