@@ -13,9 +13,9 @@ $font-family-monospace: "Fira Code";
 // $body-color:
 // $link-color:
 // $selection-bg:
-// $code-block-bg:
-// $dark-bg-code-color:
-
+$code-block-bg: #4a4a4a !default;
+$dark-bg-code-color: #076 !default;
+//$monobackgroundcolor: #076 !default;
 
 // headings
 //$presentation-heading-color:
@@ -31,11 +31,11 @@ $code-block-font-size: 0.9em;
 }
 
 .reveal .slide div.sourceCode {
-  // margin-bottom: 20px;
-  border: none;
+  margin-bottom: 20px;
+  //border: none;
 }
 
-.reveal pre code {
+.reveal pre.sourceCode code {
   max-height: 700px;
 }
 
@@ -45,5 +45,9 @@ $code-block-font-size: 0.9em;
 }
 
 .small {
-  font-size: 0.7em;
+  font-size: 0.75em;
+}
+
+.cell-output code {
+  background-color: #4a4a4a;
 }

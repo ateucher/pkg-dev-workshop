@@ -4,7 +4,7 @@ subtitle: The Whole Game
 author: "Andy Teucher"
 format:
   revealjs: 
-    theme: [simple, slides.scss]
+    theme: [night, slides.scss]
     slide-number: true
     chalkboard: true
     preview-links: auto
@@ -19,79 +19,94 @@ execute:
   eval: false
 ---
 
-# A sneak preview of our end goal
+```{r}
+#| eval: true
+#| include: FALSE
+#| cache: FALSE
+library(fontawesome)
+
+metrify_tmp <- fs::path_temp("metrify")
+withr::with_options(
+  list(usethis.description = NULL),
+  usethis::create_package(
+    metrify_tmp, open = FALSE, rstudio = TRUE, check_name = FALSE
+  )
+)
+```
 
 ## The **`metrify`** package
 
 We will:
 
-- Create a package called **`metrify`**
-- Use git to track our changes
-- Push the code to a repository on GitHub
-- Create tests for our functions
-- Create a documentation website
+-   Create a package called **`metrify`**
+-   Use git to track our changes
+-   Push the code to a repository on GitHub
+-   Create tests for our functions
+-   Create a documentation website
 
-\
+# A sneak preview of our end goal
 
-. . .
+![](img/canada.gif)
 
 **`metrify`** will be a package to convert imperial measurements to metric.
 
 ## Explore **`metrify`**
 
-- [GitHub](https://github.com/ateucher/metrify)
-- [Website](https://ateucher.github.io/metrify/)
+-   [GitHub](https://github.com/ateucher/metrify)
+-   [Website](https://ateucher.github.io/metrify/)
 
 \
 
 [GitHub](https://github.com/ateucher/metrify) is the package in "Source" form
 
-- Package code in `R/`
-- Function documentation files in `man/` 
-- Package vignettes in `vignettes/`
-- DESCRIPTION
-- NAMESPACE
+-   Package code in `R/`
+-   Function documentation files in `man/`
+-   Package vignettes in `vignettes/`
+-   DESCRIPTION
+-   NAMESPACE
 
 ## Step 0: Tools
 
-- `R >= 4.3.0`
+-   `R >= 4.3.0`
 
-- ![](img/RStudio-Logo-Flat.png){style="vertical-align: middle;" width="180"}
+-   ![](img/RStudio-Logo-Flat.png){style="vertical-align: middle;" width="180"}
 
-  (<https://posit.co/download/rstudio-desktop/>)
+    (<https://posit.co/download/rstudio-desktop/>)
 
-- Packages: 
+-   Packages:
 
-  ```r
-  install.packages(
-    c("devtools", "roxygen2", "testthat", "rmarkdown")
-  )
-  ```
+    ``` r
+    install.packages(
+      c("devtools", "roxygen2", "testthat", "rmarkdown")
+    )
+    ```
 
 ## Step 1: Load devtools 📦
 
 \
+
 ```{r}
 #| eval: true
 library(devtools)
 ```
+
 \
+
 ```{r}
 #| eval: true
 packageVersion("devtools")
 ```
 
-- Upgrade if necessary!
+-   Upgrade if necessary!
 
-## Step 2: Create your 📦 
+## Step 2: Create your 📦
 
 ```{r}
 create_package("~/Desktop/metrify")
 ```
 
-::: {.small}
-
-```
+::: small
+``` default
 ✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
 ✔ Creating 'R/'
 ✔ Writing 'DESCRIPTION'
@@ -116,15 +131,14 @@ RoxygenNote: 7.2.3
 ```
 :::
 
-## Step 3: Use git `r fontawesome::fa("git-alt")`
+## Step 3: Use git `r fa("git-alt")`
 
-```r
+``` r
 use_git()
 ```
-\
-::: {.small}
 
-```
+::: small
+``` default
 ✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
 ✔ Initialising Git repo
 ✔ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store', '.quarto' to '.gitignore'
@@ -141,3 +155,171 @@ Is it ok to commit them?
 3: Yeah
 ```
 :::
+
+## Step 4: Write your first function!
+
+```{r}
+#| eval: true
+f_to_c <- function(x) {
+  (x - 32) * (5/9)
+}
+```
+
+## 
+
+But where to put it?
+
+``` r
+use_r("f_to_c")
+```
+
+``` default
+✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
+• Modify 'R/f_to_c.R'
+```
+
+Put the definition of `f_to_c()` in this file
+
+## Step 5: Test it out
+
+\
+
+### But how??
+
+\
+
+::: {.fragment .fade-in}
+::: {.fragment .strike}
+`source("R/f_toc.R")`
+:::
+:::
+
+\
+
+::: {.fragment .fade-in}
+::: {.fragment .strike}
+Send function to console using RStudio (Ctrl/CMD+Return)
+:::
+:::
+
+\
+
+::: {.fragment .fade-in}
+``` r
+load_all()
+```
+:::
+
+## `load_all()`
+
+-   `r fa("keyboard")` Ctrl+Alt+L (Windows/Linux)
+
+-   `r fa("keyboard")` Cmd+Alt+L (Mac)
+
+-   Makes all of the functions from your in-development package available to use
+
+-   Try it!
+
+    ```{r}
+    #| eval: true
+    f_to_c(97)
+    ```
+
+-   Check:
+
+    ``` r
+    exists("f_to_c", where = globalenv(), inherits = FALSE)
+    #> [1] FALSE
+    ```
+
+## Step 6: Commit to git `r fa("git-alt")`
+
+``` sh
+git diff
+```
+
+``` default
+diff --git a/R/f_to_c.R b/R/f_to_c.R
+new file mode 100644
+index 0000000..53c012c
+--- /dev/null
++++ b/R/f_to_c.R
+@@ -0,0 +1,3 @@
++f_to_c <- function(x) {
++  (x - 32) * (5/9)
++}
+```
+
+``` sh
+git add R/f_to_c.R
+git commit -m "Add f_to_c()"
+```
+
+## Step 7: `check()`
+
+-   Calls `R CMD check`
+-   Ensures that all the various parts of the package are in good order
+
+``` r
+check()
+```
+
+``` default
+── R CMD check results ─────────────────── metrify 0.0.0.9000 ────
+Duration: 5.7s
+
+❯ checking DESCRIPTION meta-information ... WARNING
+  Non-standard license specification:
+    `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+  Standardizable: FALSE
+
+0 errors ✔ | 1 warning ✖ | 0 notes ✔
+```
+
+## The `DESCRIPTION` file
+
+::: small
+```{cat, code = readLines(fs::path(metrify_tmp, "DESCRIPTION")), class.source = "yaml"}
+```
+:::
+
+## Step 8: Edit `DESCRIPTION` file
+
+<!-- TODO: Probably take a bigger detour here and detail the parts of a DESCRIPTION file.-->
+
+
+## Step 9: Choose a license
+
+`> ?licenses`
+
+Permissive:
+
+-   **MIT**: simple and permissive.
+-   **Apache 2.0**: MIT + provides patent protection.
+
+Copyleft:
+
+-   **GPL (v2 or v3)**: requires sharing of improvements.
+-   **AGPL v3**: requires sharing of improvements.
+-   **LGPL (v2.1 or v3)**: requires sharing of improvements.
+
+Creative commons licenses appropriate for data packages:
+
+-   **CC0**: dedicated to public domain.
+-   **CC-BY**: Free to share and adapt, must give appropriate credit.
+
+## `use_*_license()`
+
+``` r
+use_mit_license()
+```
+
+``` default
+✔ Adding 'MIT + file LICENSE' to License
+✔ Writing 'LICENSE'
+✔ Writing 'LICENSE.md'
+✔ Adding '^LICENSE\\.md$' to '.Rbuildignore'
+```
+
+## Commit changes to git `r fa("git-alt")`
