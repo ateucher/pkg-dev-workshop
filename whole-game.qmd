@@ -15,6 +15,7 @@ format:
     height: 900
     width: 1600
     highlight-style: a11y-dark
+    fig-align: center
 execute:
   echo: true
   eval: false
@@ -323,4 +324,25 @@ use_mit_license()
 ✔ Adding '^LICENSE\\.md$' to '.Rbuildignore'
 ```
 
+<!-- TODO: detour into licensing - CRAN requirements and general considerations -->
+
 ## Commit changes to git `r fa("git-alt")`
+
+::: columns
+::: {.column width="40%"}
+::: small
+``` default
+git add DESCRIPTION \
+        LICENSE \
+        LICENSE.md \
+        .Rbuildignore
+        
+git commit -m "Add MIT license"
+```
+:::
+:::
+
+::: {.column width="60%"}
+![](img/git-commit-license.png)
+:::
+:::
