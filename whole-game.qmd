@@ -214,9 +214,9 @@ load_all()
 
 ## `load_all()`
 
--   `r fa("keyboard")` Ctrl+Alt+L (Windows/Linux)
+-   `r fa("keyboard")` Ctrl+Shift+L (Windows/Linux)
 
--   `r fa("keyboard")` Cmd+Alt+L (Mac)
+-   `r fa("keyboard")` Cmd+Shift+L (Mac)
 
 -   Makes all of the functions from your in-development package available to use
 
@@ -289,7 +289,6 @@ Duration: 5.7s
 ## Step 8: Edit `DESCRIPTION` file
 
 <!-- TODO: Probably take a bigger detour here and detail the parts of a DESCRIPTION file.-->
-
 
 ## Step 9: Choose a license
 
