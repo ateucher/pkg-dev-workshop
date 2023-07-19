@@ -1,3 +1,4 @@
+source("renv/activate.R")
 options(
   reprex.highlight.hl_style  = "zenburn",
   reprex.highlight.font      = "Source Code Pro",
