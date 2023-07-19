@@ -154,4 +154,8 @@ usethis::git_sitrep()
 
 The output shows information about the link between RStudio and GitHub. Not all of it is relevant now, but it is essential to check whether your name and email are correct and the PAT is showing as "discovered":
 
-    Personal access token for 'https://github.com': '<discovered>'
+::: cell-output
+```
+Personal access token for 'https://github.com': '<discovered>'
+```
+:::

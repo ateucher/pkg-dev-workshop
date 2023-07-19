@@ -32,9 +32,12 @@ website:
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: styles.css
+      light:
+        - flatly
+        - style-light.scss
+      dark:
+        - darkly
+        - style-dark.scss
     toc: true
 
 
