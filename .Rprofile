@@ -1,8 +1,9 @@
-source("renv/activate.R")
 options(
-  reprex.highlight.hl_style  = "zenburn",
-  reprex.highlight.font      = "Source Code Pro",
-  reprex.highlight.font_size = 50
+  repos = c(RSPM = "https://packagemanager.rstudio.com/all/latest",
+            CRAN = "https://cran.rstudio.com/"),
+
+  renv.config.rspm.enabled = TRUE, ## Use RStudio Package manager for pre-built package binaries
+  renv.config.cache.enabled = TRUE   ## Use the renv build cache to speed up install times
 )
 
-source("~/.Rprofile", echo = FALSE)
+source("renv/activate.R")
