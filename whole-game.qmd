@@ -48,7 +48,7 @@ We will:
 
 # A sneak preview of our end goal
 
-![](img/canada.gif)
+![](img/7-dwarves.gif)
 
 **`libminer`** will be a package to explore our R package libraries.
 
@@ -161,7 +161,7 @@ Is it ok to commit them?
 ## Step 4: Write your first function!
 
 ```{r}
-#| eval: false
+#| eval: true
 lib_summary <- function() {
   pkgs <- utils::installed.packages()
   pkg_tbl <- table(pkgs[, "LibPath"], dnn = "Library")
