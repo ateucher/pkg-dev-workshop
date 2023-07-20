@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "System Setup 🤖",
+    "section": "",
+    "text": "You will require the following software installed and configured for the workshop. Please have this set up and ready to go before we start."
+  },
+  {
+    "objectID": "setup.html#computing-requirements",
+    "href": "setup.html#computing-requirements",
+    "title": "System Setup 🤖",
+    "section": "Computing requirements",
+    "text": "Computing requirements\nYou will need:\n\nA laptop computer with administrative privileges\nR and RStudio\nR package development toolchain: Rtools(windows) or XCode (mac) or r-base-dev\nSeveral R packages\nGit\nGitHub account\nGitHub linked to RStudio"
+  },
+  {
+    "objectID": "setup.html#install-r-and-rstudio",
+    "href": "setup.html#install-r-and-rstudio",
+    "title": "System Setup 🤖",
+    "section": "Install R and RStudio",
+    "text": "Install R and RStudio\nYou will need:\n\nR version &gt;= 4.2.0\nRStudio &gt;= 2023.03.1\n\n\nInstall R\nDownload and install R for your operating system from https://cloud.r-project.org/.\n\n\nInstall R Studio\nDownload and install RStudio Desktop from https://posit.co/download/rstudio-desktop/. This page should automatically offer you the version suitable for your operating system, but you can scroll down to find versions for all operating systems."
+  },
+  {
+    "objectID": "setup.html#install-r-package-development-tools",
+    "href": "setup.html#install-r-package-development-tools",
+    "title": "System Setup 🤖",
+    "section": "Install R package development tools",
+    "text": "Install R package development tools\n\nFor Windows\nDownload and run the latest Rtools installer, Rtools.exe, from https://cran.r-project.org/bin/windows/Rtools/.\n\nKeep the default settings for the installation location and components to install\ncheck the box to add rtools to the system PATH.\n\n\n\nFor Mac\nInstall XCode. The easiest way is to open a Terminal window (Applications &gt; Utilities &gt; Terminal.app; or use the Terminal pane in RStudio) and type the following:\nxcode-select --install\nYou will be prompted to confirm the install, and possibly enter your computer password. Do so to complete the installation.\nAlternatively you can:\n\nDownload and install XCode from the Mac AppStore: http://itunes.apple.com/us/app/xcode/id497799835?mt=12\nWithin XCode go to Preferences : Downloads and install the Command Line Tools\n\n\n\nFor Linux\nIf you installed r-base-dev when installing R, you should have all you need to build packages from source. If not, go back to https://cloud.r-project.org/ and follow the instructions for your distribution (Ubuntu and Debian are likely the most common, and install it with sudo apt-get install r-base-dev)."
+  },
+  {
+    "objectID": "setup.html#packages",
+    "href": "setup.html#packages",
+    "title": "System Setup 🤖",
+    "section": "Install packages",
+    "text": "Install packages\nIn R, install the necessary packages by running:\n\ninstall.packages(c(\"devtools\", \"pkgdown\", \"roxygen2\", \"testthat\", \"covr\", \"knitr\"))\n\nYou can verify your system is set up for package development by running:\n\ndevtools::has_devel()\n\nYour system is ready to build packages!"
+  },
+  {
+    "objectID": "setup.html#git",
+    "href": "setup.html#git",
+    "title": "System Setup 🤖",
+    "section": "Git",
+    "text": "Git\nWe will be demonstrating the use of Git and GitHub for tracking changes during package development, and sharing and collaborating on our package. It is not strictly necessary for the workshop, but you will benefit greatly by using it.\n\nWindows\nCheck if Git is installed by running which git in the Terminal\nIf which git didn’t find Git installed:\n\nDownload and install from https://git-scm.com/downloads\nKeep all the default settings\nOpen RStudio. In the menus go to Tools &gt; Global Options &gt; Git/SVN.\nCheck RStudio has found git under “Git executable:”\n\nYou may need to click Browse and find the git executable.\nIt may be in C:/Users/[username]/AppData/Local/Programs/Git/\n\n\n\n\nMac\nCheck if Git is installed by running which git in the Terminal. You should see something like /usr/bin/git, /usr/local/bin/, or /opt/homebrew/bin/git.\nIf you are asked to install the Xcode command line tools, say yes.\nIf which git didn’t find Git installed, and if you weren’t prompted to install it, run the following in the Terminal: xcode-select --install\n\n\nIf you do lots of scientific computing and especially if you use command-line programs in the Terminal, we recommend using Homebrew. See brew.sh for installation instructions. To install Git using Homebrew, run the following in the Terminal: brew install git"
+  },
+  {
+    "objectID": "setup.html#github",
+    "href": "setup.html#github",
+    "title": "System Setup 🤖",
+    "section": "GitHub",
+    "text": "GitHub\nRegister a GitHub account at github.com.\n\nPick a name that reflects your real name.\nAlign it with your other usernames (such as social media accounts).\nUse all lower case letters.\n\nI highly recommend the book Happy Git with R for advice on setting up and using Git with R [@bryan]."
+  },
+  {
+    "objectID": "setup.html#check-link-between-rstudio-and-github",
+    "href": "setup.html#check-link-between-rstudio-and-github",
+    "title": "System Setup 🤖",
+    "section": "Check link between RStudio and GitHub",
+    "text": "Check link between RStudio and GitHub\nConfigure your user.name and user.email for git in RStudio with:\n\nusethis::use_git_config(\n  user.name = \"Jane Doe\",          # actual first and last name\n  user.email = \"jane@example.com\"  # email associated with GitHub account\n  )\n\nCommunicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a personal access token (PAT). The Managing Git(Hub) Credentials vignette in the usethis [@usethis] package has details on using PATs, but for now the following should suffice.\nCreate a PAT with:\n\nusethis::create_github_token()\n\n\nGive the token a descriptive name, accept the default scopes, and click “Generate Token”.\nCopy the newly generated PAT to your clipboard.\nRun gitcreds::gitcreds_set() in R and paste in your PAT when prompted.\nAfter you close the PAT webpage, you won’t be able to see your PAT again! You can store it somewhere secure, such as in a password manager.\n\n\n\nYou may need to install the gitcreds package [@gitcreds].\nYou can now check your Git setup by asking for a “situation report”:\n\nusethis::git_sitrep()\n\n\n\n\n── Git global (user) \n\n\n• Name: 'Andy Teucher'\n• Email: 'andy.teucher@gmail.com'\n• Global (user-level) gitignore file: '/Users/andy/.gitignore'\n• Vaccinated: TRUE\nℹ Defaulting to 'https' Git protocol\n• Default Git protocol: 'https'\n• Default initial branch name: 'main'\n\n\n── GitHub user \n\n• Default GitHub host: 'https://github.com'\n• Personal access token for 'https://github.com': '&lt;discovered&gt;'\n• GitHub user: 'ateucher'\n• Token scopes: 'gist, repo, user, workflow'\n• Email(s): 'andy.teucher@gmail.com (primary)', 'andy.teucher@gov.bc.ca', 'andy.teucher@posit.co'\n\n\n── Active usethis project: '/Users/andy/dev/pkg-dev-workshop' ──\n\n\n\n── Git local (project) \n\n• Name: 'Andy Teucher'\n• Email: 'andy.teucher@gmail.com'\n• Default branch: 'main'\n• Current local branch -&gt; remote tracking branch:\n  'main' -&gt; 'origin/main'\n\n\n── GitHub project \n\n• Type = 'ours'\n• Host = 'https://github.com'\n• Config supports a pull request = TRUE\n• origin = 'ateucher/pkg-dev-workshop' (can push)\n• upstream = &lt;not configured&gt;\n• Desc = 'origin' is both the source and primary repo.\n  \n  Read more about the GitHub remote configurations that usethis supports at:\n  'https://happygitwithr.com/common-remote-setups.html'\n\n\nThe output shows information about the link between RStudio and GitHub. Not all of it is relevant now, but it is essential to check whether your name and email are correct and the PAT is showing as “discovered”:\n\nPersonal access token for 'https://github.com': '&lt;discovered&gt;'"
+  },
+  {
+    "objectID": "r-code.html",
+    "href": "r-code.html",
+    "title": "R code 💻",
+    "section": "",
+    "text": "Don’t put library() or require() in packages"
+  },
+  {
+    "objectID": "intro.html#what-the-course-will-look-like",
+    "href": "intro.html#what-the-course-will-look-like",
+    "title": "Introduction and motivation ✨",
+    "section": "What the course will look like",
+    "text": "What the course will look like\nWe will work together through developing a package, and at various steps along the way we will take detours to examine tools, processes, and package structure.\nWe’ll be live coding together"
+  },
+  {
+    "objectID": "intro.html#course-logistics",
+    "href": "intro.html#course-logistics",
+    "title": "Introduction and motivation ✨",
+    "section": "Course logistics",
+    "text": "Course logistics\n\nCode of Conduct\n\n\nSchedule\n\n\nSticky notes\n\n\nTAs\n\n\nNote-taking"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fundamentals of R package development: 1-day course",
+    "section": "",
+    "text": "We are often faced with the need to share our code with others, or find ourselves writing similar code over and over again across different projects. In R, the fundamental unit of reusable code is a package, containing helpful functions, documentation, and sometimes sample data. This workshop will teach you the fundamentals of package development in R, using tools and principles developed and used extensively by the tidyverse team - specifically the ‘devtools’ family of packages including usethis, testthat, and roxygen2. These packages and workflows help you focus on the contents of your package rather than the minutiae of package structure.\nYou will learn the structure of a package, how to organize your code, and workflows to help you develop your package iteratively. You will learn how to write good documentation so that users can learn how to use your package, and how to use automated testing to ensure it is functioning the way you expect it to, now and into the future. You will also learn how to check your package for common problems, and how to distribute your package for others to use.\nThis will be an interactive 1-day workshop, and we will be using the RStudio IDE to work through the materials, as it has been designed to work well with the development practices we will be featuring.\n**This workshop is for you if you…*\n\nhave written several R scripts and find yourself wondering how to reuse or share the code you’ve written.\nknow how to write functions in R.\nare looking for a way to take the next step in your R programming journey."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "scratch/whole-game-outline.html",
+    "href": "scratch/whole-game-outline.html",
+    "title": "📦 Fundamentals of R Package Development",
+    "section": "",
+    "text": "From the book:\n2.1 Load devtools and friends 2.2 Toy package: regexcite 2.3 Preview the finished product 2.4 create_package() 2.5 use_git() 2.6 Write the first function 2.7 use_r() 2.8 load_all() (first commit) 2.9 check() 2.10 Edit DESCRIPTION 2.11 use_mit_license() 2.12 document() (NAMESPACE changes) 2.13 check() again 2.14 install() 2.15 use_testthat() 2.16 use_package() 2.17 use_github() 2.18 use_readme_rmd() 2.19 The end: check() and install() 2.20 Review"
+  },
+  {
+    "objectID": "whole-game.html#the-metrify-package",
+    "href": "whole-game.html#the-metrify-package",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "The metrify package",
+    "text": "The metrify package\nWe will:\n\nCreate a package called metrify\n\nUse git to track our changes\nPush the code to a repository on GitHub\nCreate tests for our functions\nCreate a documentation website"
+  },
+  {
+    "objectID": "whole-game.html#explore-metrify",
+    "href": "whole-game.html#explore-metrify",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Explore metrify\n",
+    "text": "Explore metrify\n\n\nGitHub\nWebsite\n\n\nGitHub is the package in “Source” form\n\nPackage code in R/\n\nFunction documentation files in man/\n\nPackage vignettes in vignettes/\n\nDESCRIPTION\nNAMESPACE"
+  },
+  {
+    "objectID": "whole-game.html#step-0-tools",
+    "href": "whole-game.html#step-0-tools",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 0: Tools",
+    "text": "Step 0: Tools\n\nR &gt;= 4.3.0\n\n\n(https://posit.co/download/rstudio-desktop/)\n\n\nPackages:\ninstall.packages(\n  c(\"devtools\", \"roxygen2\", \"testthat\", \"rmarkdown\")\n)"
+  },
+  {
+    "objectID": "whole-game.html#step-1-load-devtools",
+    "href": "whole-game.html#step-1-load-devtools",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 1: Load devtools 📦",
+    "text": "Step 1: Load devtools 📦\n\n\nlibrary(devtools)\n\n\n\npackageVersion(\"devtools\")\n\n[1] '2.4.5'\n\n\n\nUpgrade if necessary!"
+  },
+  {
+    "objectID": "whole-game.html#step-2-create-your",
+    "href": "whole-game.html#step-2-create-your",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 2: Create your 📦",
+    "text": "Step 2: Create your 📦\n\ncreate_package(\"~/Desktop/metrify\")\n\n\n✔ Setting active project to '/Users/andyteucher/Desktop/metrify'\n✔ Creating 'R/'\n✔ Writing 'DESCRIPTION'\nPackage: metrify\nTitle: What the Package Does (One Line, Title Case)\nVersion: 0.0.0.9000\nAuthors@R (parsed):\n    * First Last &lt;first.last@example.com&gt; [aut, cre] (YOUR-ORCID-ID)\nDescription: What the package does (one paragraph).\nLicense: `use_mit_license()`, `use_gpl3_license()` or friends to\n    pick a license\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.2.3\n✔ Writing 'NAMESPACE'\n✔ Writing 'metrify.Rproj'\n✔ Adding '^metrify\\\\.Rproj$' to '.Rbuildignore'\n✔ Adding '.Rproj.user' to '.gitignore'\n✔ Adding '^\\\\.Rproj\\\\.user$' to '.Rbuildignore'\n✔ Opening '/Users/andyteucher/Desktop/metrify/' in new RStudio session\n✔ Setting active project to '&lt;no active project&gt;'"
+  },
+  {
+    "objectID": "whole-game.html#step-3-use-git",
+    "href": "whole-game.html#step-3-use-git",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 3: Use git \n",
+    "text": "Step 3: Use git \n\nuse_git()\n\n✔ Setting active project to '/Users/andyteucher/Desktop/metrify'\n✔ Initialising Git repo\n✔ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store', '.quarto' to '.gitignore'\nThere are 5 uncommitted files:\n* '.gitignore'\n* '.Rbuildignore'\n* 'DESCRIPTION'\n* 'metrify.Rproj'\n* 'NAMESPACE'\nIs it ok to commit them?\n\n1: Absolutely not\n2: Not now\n3: Yeah"
+  },
+  {
+    "objectID": "whole-game.html#step-4-write-your-first-function",
+    "href": "whole-game.html#step-4-write-your-first-function",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 4: Write your first function!",
+    "text": "Step 4: Write your first function!\n\nf_to_c &lt;- function(x) {\n  (x - 32) * (5/9)\n}"
+  },
+  {
+    "objectID": "whole-game.html#section",
+    "href": "whole-game.html#section",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "",
+    "text": "But where to put it?\nuse_r(\"f_to_c\")\n✔ Setting active project to '/Users/andyteucher/Desktop/metrify'\n• Modify 'R/f_to_c.R'\nPut the definition of f_to_c() in this file"
+  },
+  {
+    "objectID": "whole-game.html#step-5-test-it-out",
+    "href": "whole-game.html#step-5-test-it-out",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 5: Test it out",
+    "text": "Step 5: Test it out\n\nBut how??\n\n\n\nsource(\"R/f_toc.R\")\n\n\n\n\n\nSend function to console using RStudio (Ctrl/CMD+Return)\n\n\n\n\nload_all()"
+  },
+  {
+    "objectID": "whole-game.html#load_all",
+    "href": "whole-game.html#load_all",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "load_all()",
+    "text": "load_all()\n\n Ctrl+Shift+L (Windows/Linux)\n Cmd+Shift+L (Mac)\nMakes all of the functions from your in-development package available to use\n\nTry it!\n\nf_to_c(97)\n\n[1] 36.11111\n\n\n\n\nCheck:\nexists(\"f_to_c\", where = globalenv(), inherits = FALSE)\n#&gt; [1] FALSE"
+  },
+  {
+    "objectID": "whole-game.html#step-6-commit-to-git",
+    "href": "whole-game.html#step-6-commit-to-git",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 6: Commit to git \n",
+    "text": "Step 6: Commit to git \n\ngit diff\ndiff --git a/R/f_to_c.R b/R/f_to_c.R\nnew file mode 100644\nindex 0000000..53c012c\n--- /dev/null\n+++ b/R/f_to_c.R\n@@ -0,0 +1,3 @@\n+f_to_c &lt;- function(x) {\n+  (x - 32) * (5/9)\n+}\ngit add R/f_to_c.R\ngit commit -m \"Add f_to_c()\""
+  },
+  {
+    "objectID": "whole-game.html#step-7-check",
+    "href": "whole-game.html#step-7-check",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 7: check()\n",
+    "text": "Step 7: check()\n\n\nCalls R CMD check\n\nEnsures that all the various parts of the package are in good order\n\ncheck()\n── R CMD check results ─────────────────── metrify 0.0.0.9000 ────\nDuration: 5.7s\n\n❯ checking DESCRIPTION meta-information ... WARNING\n  Non-standard license specification:\n    `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\n  Standardizable: FALSE\n\n0 errors ✔ | 1 warning ✖ | 0 notes ✔"
+  },
+  {
+    "objectID": "whole-game.html#the-description-file",
+    "href": "whole-game.html#the-description-file",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "The DESCRIPTION file",
+    "text": "The DESCRIPTION file\n\n\nPackage: metrify\nTitle: What the Package Does (One Line, Title Case)\nVersion: 0.0.0.9000\nAuthors@R: \n    person(\"First\", \"Last\", , \"first.last@example.com\", role = c(\"aut\", \"cre\"),\n           comment = c(ORCID = \"YOUR-ORCID-ID\"))\nDescription: What the package does (one paragraph).\nLicense: `use_mit_license()`, `use_gpl3_license()` or friends to pick a\n    license\nEncoding: UTF-8\nRoxygen: list(markdown = TRUE)\nRoxygenNote: 7.2.3"
+  },
+  {
+    "objectID": "whole-game.html#step-8-edit-description-file",
+    "href": "whole-game.html#step-8-edit-description-file",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 8: Edit DESCRIPTION file",
+    "text": "Step 8: Edit DESCRIPTION file"
+  },
+  {
+    "objectID": "whole-game.html#step-9-choose-a-license",
+    "href": "whole-game.html#step-9-choose-a-license",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Step 9: Choose a license",
+    "text": "Step 9: Choose a license\n&gt; ?licenses\nPermissive:\n\n\nMIT: simple and permissive.\n\nApache 2.0: MIT + provides patent protection.\n\nCopyleft:\n\n\nGPL (v2 or v3): requires sharing of improvements.\n\nAGPL v3: requires sharing of improvements.\n\nLGPL (v2.1 or v3): requires sharing of improvements.\n\nCreative commons licenses appropriate for data packages:\n\n\nCC0: dedicated to public domain.\n\nCC-BY: Free to share and adapt, must give appropriate credit."
+  },
+  {
+    "objectID": "whole-game.html#use__license",
+    "href": "whole-game.html#use__license",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "use_*_license()",
+    "text": "use_*_license()\nuse_mit_license()\n✔ Adding 'MIT + file LICENSE' to License\n✔ Writing 'LICENSE'\n✔ Writing 'LICENSE.md'\n✔ Adding '^LICENSE\\\\.md$' to '.Rbuildignore'"
+  },
+  {
+    "objectID": "whole-game.html#commit-changes-to-git",
+    "href": "whole-game.html#commit-changes-to-git",
+    "title": "📦 Fundamentals of Package Development",
+    "section": "Commit changes to git \n",
+    "text": "Commit changes to git \n\n\n\n\ngit add DESCRIPTION \\\n        LICENSE \\\n        LICENSE.md \\\n        .Rbuildignore\n        \ngit commit -m \"Add MIT license\"\n\n\n\n\n\n\n\nhttps://r-pkgs.org"
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Tests 🧪",
+    "section": "",
+    "text": "Test files -&gt; tests -&gt; expectations\nfile: use_test()\ntest: test_that()\nexpectation: expect_*()\nTesting: - output - errors/warnings - side effects\nsnapshots\nhelpers - local things\nmocking\nskipping\nexecution speed - small tests"
+  }
+]
