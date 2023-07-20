@@ -1,1 +1,1 @@
-Sitemap: https://ateucher.github.io/pkg-dev-workshop/sitemap.xml
+Sitemap: https://github.com/ateucher/pkg-dev-workshop/sitemap.xml

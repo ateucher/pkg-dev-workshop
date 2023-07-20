@@ -442,32 +442,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>── Git global (user) </code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>• Name: 'Andy Teucher'
-• Email: 'andy.teucher@gmail.com'
-• Global (user-level) gitignore file: '/Users/andy/.gitignore'
-• Vaccinated: TRUE
+<pre><code>• Name: 'Quarto GHA Workflow Runner'
+• Email: 'quarto-github-actions-publish@example.com'
+• Global (user-level) gitignore file: &lt;unset&gt;
+• Vaccinated: FALSE
+ℹ See `?git_vaccinate` to learn more
 ℹ Defaulting to 'https' Git protocol
 • Default Git protocol: 'https'
-• Default initial branch name: 'main'
+• Default initial branch name: &lt;unset&gt;
 
 
 ── GitHub user 
 
 • Default GitHub host: 'https://github.com'
 • Personal access token for 'https://github.com': '&lt;discovered&gt;'
-• GitHub user: 'ateucher'
-• Token scopes: 'gist, repo, user, workflow'
-• Email(s): 'andy.teucher@gmail.com (primary)', 'andy.teucher@gov.bc.ca', 'andy.teucher@posit.co'
+✖ Can't get user information for this token.
+Error in `gh()`:
+! GitHub API error (403): Resource not accessible by integration
+ℹ Read more at
+  &lt;https://docs.github.com/rest/users/users#get-the-authenticated-user&gt;
 
 
-── Active usethis project: '/Users/andy/dev/pkg-dev-workshop' ──
+
+── Active usethis project: '/home/runner/work/pkg-dev-workshop/pkg-dev-workshop' ──
 
 
 
 ── Git local (project) 
 
-• Name: 'Andy Teucher'
-• Email: 'andy.teucher@gmail.com'
+• Name: 'Quarto GHA Workflow Runner'
+• Email: 'quarto-github-actions-publish@example.com'
 • Default branch: 'main'
 • Current local branch -&gt; remote tracking branch:
   'main' -&gt; 'origin/main'
@@ -475,12 +479,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 ── GitHub project 
 
-• Type = 'ours'
+• Type = 'theirs'
 • Host = 'https://github.com'
-• Config supports a pull request = TRUE
-• origin = 'ateucher/pkg-dev-workshop' (can push)
+• Config supports a pull request = FALSE
+• origin = 'ateucher/pkg-dev-workshop' (can not push)
 • upstream = &lt;not configured&gt;
-• Desc = 'origin' is both the source and primary repo.
+• Desc = The only configured GitHub remote is 'origin', which
+  you cannot push to.
+  If your goal is to make a pull request, you must fork-and-clone.
+  `usethis::create_from_github()` can do this.
   
   Read more about the GitHub remote configurations that usethis supports at:
   'https://happygitwithr.com/common-remote-setups.html'</code></pre>
