@@ -21,13 +21,9 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Install R Dependencies
-        uses: r-lib/actions/setup-renv@v2
+      - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          cache-version: 2
-        env:
-          # This is set by setup-r
-          RENV_CONFIG_REPOS_OVERRIDE: ""
+          cache-version: 1
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
