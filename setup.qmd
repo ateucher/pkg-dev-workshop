@@ -14,7 +14,7 @@ You will need:
 -   [Several R packages](#packages)
 -   [Git]
 -   [GitHub account](#github)
--   [GitHub linked to RStudio](#check-link-between-rstudio-and-github)
+-   [GitHub linked to R](#check-link-between-r-and-github)
 
 ## Install R and RStudio {#install-r-and-rstudio}
 
@@ -65,7 +65,7 @@ In R, install the necessary packages by running:
 
 ```{r}
 #| eval: false
-install.packages(c("devtools", "pkgdown", "roxygen2", "testthat", "covr", "knitr"))
+install.packages(c("devtools", "pkgdown", "roxygen2", "testthat", "knitr"))
 ```
 
 You can verify your system is set up for package development by running:
@@ -110,13 +110,9 @@ To install Git using Homebrew, run the following in the Terminal: `brew install 
 
 Register a GitHub account at [github.com](https://github.com/).
 
--   Pick a name that reflects your real name.
--   Align it with your other usernames (such as social media accounts).
--   Use all lower case letters.
-
 I highly recommend the book [Happy Git with R](https://happygitwithr.com/) for advice on setting up and using Git with R [@bryan].
 
-## Check link between RStudio and GitHub {#check-link-between-rstudio-and-github}
+## Check link between R and GitHub {#check-link-between-r-and-github}
 
 Configure your `user.name` and `user.email` for git in RStudio with:
 
@@ -128,7 +124,7 @@ usethis::use_git_config(
   )
 ```
 
-Communicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a personal access token (PAT). The [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/articles/git-credentials.html) vignette in the **`usethis`** [@usethis] package has details on using PATs, but for now the following should suffice.
+Communicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a Personal Access Token (PAT). The [Managing Git(Hub) Credentials](https://usethis.r-lib.org/articles/articles/git-credentials.html) vignette in the **`usethis`** [@usethis] package has details on using PATs, but for now the following should suffice.
 
 Create a PAT with:
 
@@ -149,8 +145,30 @@ You may need to install the **`gitcreds`** package [@gitcreds].
 You can now check your Git setup by asking for a "situation report":
 
 ```{r}
+#| eval: false
 usethis::git_sitrep()
 ```
+
+::: cell-output
+```
+── Git global (user) 
+• Name: 'Andy Teucher'
+• Email: 'andy.teucher@gmail.com'
+• Global (user-level) gitignore file: '/Users/andy/.gitignore'
+• Vaccinated: TRUE
+ℹ Defaulting to 'https' Git protocol
+• Default Git protocol: 'https'
+• Default initial branch name: 'main'
+
+── GitHub user 
+• Default GitHub host: 'https://github.com'
+• Personal access token for 'https://github.com': '<discovered>'
+• GitHub user: 'ateucher'
+• Token scopes: 'gist, repo, user, workflow'
+• Email(s): 'andy.teucher@gmail.com (primary)'
+ℹ No active usethis project
+```
+:::
 
 The output shows information about the link between RStudio and GitHub. Not all of it is relevant now, but it is essential to check whether your name and email are correct and the PAT is showing as "discovered":
 
