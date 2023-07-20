@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#mac" id="toc-mac" class="nav-link" data-scroll-target="#mac">Mac</a></li>
   </ul></li>
   <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
-  <li><a href="#check-link-between-rstudio-and-github" id="toc-check-link-between-rstudio-and-github" class="nav-link" data-scroll-target="#check-link-between-rstudio-and-github">Check link between RStudio and GitHub</a></li>
+  <li><a href="#check-link-between-r-and-github" id="toc-check-link-between-r-and-github" class="nav-link" data-scroll-target="#check-link-between-r-and-github">Check link between R and GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -312,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="#packages">Several R packages</a></li>
 <li><a href="#git">Git</a></li>
 <li><a href="#github">GitHub account</a></li>
-<li><a href="#check-link-between-rstudio-and-github">GitHub linked to RStudio</a></li>
+<li><a href="#check-link-between-r-and-github">GitHub linked to R</a></li>
 </ul>
 </section>
 <section id="install-r-and-rstudio" class="level2">
@@ -361,7 +361,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="packages">Install packages</h2>
 <p>In R, install the necessary packages by running:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"devtools"</span>, <span class="st">"pkgdown"</span>, <span class="st">"roxygen2"</span>, <span class="st">"testthat"</span>, <span class="st">"covr"</span>, <span class="st">"knitr"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"devtools"</span>, <span class="st">"pkgdown"</span>, <span class="st">"roxygen2"</span>, <span class="st">"testthat"</span>, <span class="st">"knitr"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>You can verify your system is set up for package development by running:</p>
 <div class="cell">
@@ -402,15 +402,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="github" class="level2">
 <h2 class="anchored" data-anchor-id="github">GitHub</h2>
 <p>Register a GitHub account at <a href="https://github.com/">github.com</a>.</p>
-<ul>
-<li>Pick a name that reflects your real name.</li>
-<li>Align it with your other usernames (such as social media accounts).</li>
-<li>Use all lower case letters.</li>
-</ul>
 <p>I highly recommend the book <a href="https://happygitwithr.com/">Happy Git with R</a> for advice on setting up and using Git with R <span class="citation" data-cites="bryan">[@bryan]</span>.</p>
 </section>
-<section id="check-link-between-rstudio-and-github" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="check-link-between-rstudio-and-github">Check link between RStudio and GitHub</h2>
+<section id="check-link-between-r-and-github" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="check-link-between-r-and-github">Check link between R and GitHub</h2>
 <p>Configure your <code>user.name</code> and <code>user.email</code> for git in RStudio with:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">use_git_config</span>(</span>
@@ -418,7 +413,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">user.email =</span> <span class="st">"jane@example.com"</span>  <span class="co"># email associated with GitHub account</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Communicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a personal access token (PAT). The <a href="https://usethis.r-lib.org/articles/articles/git-credentials.html">Managing Git(Hub) Credentials</a> vignette in the <strong><code>usethis</code></strong> <span class="citation" data-cites="usethis">[@usethis]</span> package has details on using PATs, but for now the following should suffice.</p>
+<p>Communicating with GitHub requires authentication with your GitHub account. This is achieved by creating and securely storing a Personal Access Token (PAT). The <a href="https://usethis.r-lib.org/articles/articles/git-credentials.html">Managing Git(Hub) Credentials</a> vignette in the <strong><code>usethis</code></strong> <span class="citation" data-cites="usethis">[@usethis]</span> package has details on using PATs, but for now the following should suffice.</p>
 <p>Create a PAT with:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">create_github_token</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -435,63 +430,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div></div><p>You can now check your Git setup by asking for a “situation report”:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>usethis<span class="sc">::</span><span class="fu">git_sitrep</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code></code></pre>
 </div>
-<div class="cell-output cell-output-stderr">
-<pre><code>── Git global (user) </code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>• Name: 'Quarto GHA Workflow Runner'
-• Email: 'quarto-github-actions-publish@example.com'
-• Global (user-level) gitignore file: &lt;unset&gt;
-• Vaccinated: FALSE
-ℹ See `?git_vaccinate` to learn more
+<div class="cell-output">
+<pre><code>── Git global (user) 
+• Name: 'Andy Teucher'
+• Email: 'andy.teucher@gmail.com'
+• Global (user-level) gitignore file: '/Users/andy/.gitignore'
+• Vaccinated: TRUE
 ℹ Defaulting to 'https' Git protocol
 • Default Git protocol: 'https'
-• Default initial branch name: &lt;unset&gt;
-
+• Default initial branch name: 'main'
 
 ── GitHub user 
-
 • Default GitHub host: 'https://github.com'
 • Personal access token for 'https://github.com': '&lt;discovered&gt;'
-✖ Can't get user information for this token.
-Error in `gh()`:
-! GitHub API error (403): Resource not accessible by integration
-ℹ Read more at
-  &lt;https://docs.github.com/rest/users/users#get-the-authenticated-user&gt;
-
-
-
-── Active usethis project: '/home/runner/work/pkg-dev-workshop/pkg-dev-workshop' ──
-
-
-
-── Git local (project) 
-
-• Name: 'Quarto GHA Workflow Runner'
-• Email: 'quarto-github-actions-publish@example.com'
-• Default branch: 'main'
-• Current local branch -&gt; remote tracking branch:
-  'main' -&gt; 'origin/main'
-
-
-── GitHub project 
-
-• Type = 'theirs'
-• Host = 'https://github.com'
-• Config supports a pull request = FALSE
-• origin = 'ateucher/pkg-dev-workshop' (can not push)
-• upstream = &lt;not configured&gt;
-• Desc = The only configured GitHub remote is 'origin', which
-  you cannot push to.
-  If your goal is to make a pull request, you must fork-and-clone.
-  `usethis::create_from_github()` can do this.
-  
-  Read more about the GitHub remote configurations that usethis supports at:
-  'https://happygitwithr.com/common-remote-setups.html'</code></pre>
-</div>
+• GitHub user: 'ateucher'
+• Token scopes: 'gist, repo, user, workflow'
+• Email(s): 'andy.teucher@gmail.com (primary)'
+ℹ No active usethis project</code></pre>
 </div>
 <p>The output shows information about the link between RStudio and GitHub. Not all of it is relevant now, but it is essential to check whether your name and email are correct and the PAT is showing as “discovered”:</p>
 <div class="cell-output">
