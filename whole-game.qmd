@@ -27,20 +27,20 @@ execute:
 #| cache: FALSE
 library(fontawesome)
 
-metrify_tmp <- fs::path_temp("metrify")
+libminer_tmp <- fs::path_temp("libminer")
 withr::with_options(
   list(usethis.description = NULL),
   usethis::create_package(
-    metrify_tmp, open = FALSE, rstudio = TRUE, check_name = FALSE
+    libminer_tmp, open = FALSE, rstudio = TRUE, check_name = FALSE
   )
 )
 ```
 
-## The **`metrify`** package
+## The **`libminer`** package
 
 We will:
 
--   Create a package called **`metrify`**
+-   Create a package called **`libminer`**
 -   Use git to track our changes
 -   Push the code to a repository on GitHub
 -   Create tests for our functions
@@ -50,16 +50,16 @@ We will:
 
 ![](img/canada.gif)
 
-**`metrify`** will be a package to convert imperial measurements to metric.
+**`libminer`** will be a package to explore our R package libraries.
 
-## Explore **`metrify`**
+## Explore **`libminer`**
 
--   [GitHub](https://github.com/ateucher/metrify)
--   [Website](https://ateucher.github.io/metrify/)
+-   [GitHub](https://github.com/ateucher/libminer)
+-   [Website](https://ateucher.github.io/libminer/)
 
 \
 
-[GitHub](https://github.com/ateucher/metrify) is the package in "Source" form
+[GitHub](https://github.com/ateucher/libminer) is the package in "Source" form
 
 -   Package code in `R/`
 -   Function documentation files in `man/`
@@ -104,15 +104,15 @@ packageVersion("devtools")
 ## Step 2: Create your 📦
 
 ```{r}
-create_package("~/Desktop/metrify")
+create_package("~/Desktop/libminer")
 ```
 
 ::: small
 ``` default
-✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
+✔ Setting active project to '/Users/andy/Desktop/libminer'
 ✔ Creating 'R/'
 ✔ Writing 'DESCRIPTION'
-Package: metrify
+Package: libminer
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R (parsed):
@@ -124,11 +124,11 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
 ✔ Writing 'NAMESPACE'
-✔ Writing 'metrify.Rproj'
-✔ Adding '^metrify\\.Rproj$' to '.Rbuildignore'
+✔ Writing 'libminer.Rproj'
+✔ Adding '^libminer\\.Rproj$' to '.Rbuildignore'
 ✔ Adding '.Rproj.user' to '.gitignore'
 ✔ Adding '^\\.Rproj\\.user$' to '.Rbuildignore'
-✔ Opening '/Users/andyteucher/Desktop/metrify/' in new RStudio session
+✔ Opening '/Users/andy/Desktop/libminer/' in new RStudio session
 ✔ Setting active project to '<no active project>'
 ```
 :::
@@ -141,14 +141,14 @@ use_git()
 
 ::: small
 ``` default
-✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
+✔ Setting active project to '/Users/andy/Desktop/libminer'
 ✔ Initialising Git repo
 ✔ Adding '.Rhistory', '.Rdata', '.httr-oauth', '.DS_Store', '.quarto' to '.gitignore'
 There are 5 uncommitted files:
 * '.gitignore'
 * '.Rbuildignore'
 * 'DESCRIPTION'
-* 'metrify.Rproj'
+* 'libminer.Rproj'
 * 'NAMESPACE'
 Is it ok to commit them?
 
@@ -161,9 +161,11 @@ Is it ok to commit them?
 ## Step 4: Write your first function!
 
 ```{r}
-#| eval: true
-f_to_c <- function(x) {
-  (x - 32) * (5/9)
+#| eval: false
+lib_summary <- function() {
+  pkgs <- utils::installed.packages()
+  pkg_tbl <- table(pkgs[, "LibPath"], dnn = "Library")
+  as.data.frame(pkg_tbl, responseName = "n_packages")
 }
 ```
 
@@ -172,15 +174,15 @@ f_to_c <- function(x) {
 But where to put it?
 
 ``` r
-use_r("f_to_c")
+use_r("lib_summary")
 ```
 
 ``` default
-✔ Setting active project to '/Users/andyteucher/Desktop/metrify'
-• Modify 'R/f_to_c.R'
+✔ Setting active project to '/Users/andy/Desktop/libminer'
+• Modify 'R/lib_summary.R'
 ```
 
-Put the definition of `f_to_c()` in this file
+Put the definition of `lib_summary()` in this file
 
 ## Step 5: Test it out
 
@@ -192,7 +194,7 @@ Put the definition of `f_to_c()` in this file
 
 ::: {.fragment .fade-in}
 ::: {.fragment .strike}
-`source("R/f_toc.R")`
+`source("R/lib_summary.R")`
 :::
 :::
 
@@ -224,13 +226,13 @@ load_all()
 
     ```{r}
     #| eval: true
-    f_to_c(97)
+    lib_summary()
     ```
 
 -   Check:
 
     ``` r
-    exists("f_to_c", where = globalenv(), inherits = FALSE)
+    exists("lib_summary", where = globalenv(), inherits = FALSE)
     #> [1] FALSE
     ```
 
@@ -241,20 +243,22 @@ git diff
 ```
 
 ``` default
-diff --git a/R/f_to_c.R b/R/f_to_c.R
+diff --git a/R/lib_summary.R b/R/lib_summary.R
 new file mode 100644
 index 0000000..53c012c
 --- /dev/null
-+++ b/R/f_to_c.R
-@@ -0,0 +1,3 @@
-+f_to_c <- function(x) {
-+  (x - 32) * (5/9)
++++ b/R/lib_summary.R
+@@ -0,0 +1,5 @@
++lib_summary <- function() {
++  pkgs <- utils::installed.packages()
++  pkg_tbl <- table(pkgs[, "LibPath"], dnn = "Library")
++  as.data.frame(pkg_tbl, responseName = "n_packages")
 +}
 ```
 
 ``` sh
-git add R/f_to_c.R
-git commit -m "Add f_to_c()"
+git add R/lib_summary.R
+git commit -m "Add lib_summary()"
 ```
 
 ## Step 7: `check()`
@@ -267,7 +271,7 @@ check()
 ```
 
 ``` default
-── R CMD check results ─────────────────── metrify 0.0.0.9000 ────
+── R CMD check results ─────────────────── libminer 0.0.0.9000 ────
 Duration: 5.7s
 
 ❯ checking DESCRIPTION meta-information ... WARNING
@@ -282,7 +286,7 @@ Duration: 5.7s
 ## The `DESCRIPTION` file
 
 ::: small
-```{cat, code = readLines(fs::path(metrify_tmp, "DESCRIPTION")), class.source = "yaml"}
+```{cat, code = readLines(fs::path(libminer_tmp, "DESCRIPTION")), class.source = "yaml"}
 ```
 :::
 
