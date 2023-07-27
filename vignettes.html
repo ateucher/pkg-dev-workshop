@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>📦 Fundamentals of R Package Development - Automated checking with GitHub Actions 🦾</title>
+<title>📦 Fundamentals of R Package Development - Vignettes 📚</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ci.html">Automated checking with GitHub Actions 🦾</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Vignettes 📚</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -237,7 +237,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ci.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ci.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Automated checking with GitHub Actions 🦾</span></a>
   </div>
 </li>
@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Automated checking with GitHub Actions 🦾</h1>
+<h1 class="title">Vignettes 📚</h1>
 </div>
 
 
@@ -281,27 +281,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_github_action</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>Which action do you want to add? (0 to exit)
-(See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) 
-
-1: check-standard: Run `R CMD check` on Linux, macOS, and Windows
-2: test-coverage: Compute test coverage and report to https://about.codecov.io
-3: pr-commands: Add /document and /style commands for pull requests
-
-Selection: 1
-✔ Setting active project to '/Users/andy/dev/libminer'
-✔ Creating '.github/'
-✔ Adding '^\\.github$' to '.Rbuildignore'
-✔ Adding '*.html' to '.github/.gitignore'
-✔ Creating '.github/workflows/'
-✔ Saving 'r-lib/actions/examples/check-standard.yaml@v2' to '.github/workflows/R-CMD-check.yaml'
-• Learn more at &lt;https://github.com/r-lib/actions/blob/v2/examples/README.md&gt;.
-✔ Adding R-CMD-check badge to 'README.Rmd'
-• Re-knit 'README.Rmd' with `devtools::build_readme()`</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">build_readme</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>ℹ Installing libminer in temporary library
-ℹ Building /Users/andy/dev/libminer/README.Rmd</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">use_vignette</span>(<span class="st">"lib-sitrep"</span>, <span class="st">"Library Situation Report"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<pre><code>✔ Adding 'knitr' to Suggests field in DESCRIPTION
+✔ Adding 'rmarkdown' to Suggests field in DESCRIPTION
+✔ Adding 'knitr' to VignetteBuilder
+✔ Adding 'inst/doc' to '.gitignore'
+✔ Creating 'vignettes/'
+✔ Adding '*.html', '*.R' to 'vignettes/.gitignore'
+✔ Writing 'vignettes/lib-sitrep.Rmd'
+• Modify 'vignettes/lib-sitrep.Rmd'</code></pre>
 
 
 
