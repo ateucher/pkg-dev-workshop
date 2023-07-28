@@ -70,6 +70,104 @@
     "text": "From the book:\n2.1 Load devtools and friends 2.2 Toy package: regexcite 2.3 Preview the finished product 2.4 create_package() 2.5 use_git() 2.6 Write the first function 2.7 use_r() 2.8 load_all() (first commit) 2.9 check() 2.10 Edit DESCRIPTION 2.11 use_mit_license() 2.12 document() (NAMESPACE changes) 2.13 check() again 2.14 install() 2.15 use_testthat() 2.16 use_package() 2.17 use_github() 2.18 use_readme_rmd() 2.19 The end: check() and install() 2.20 Review"
   },
   {
+    "objectID": "CODE_OF_CONDUCT.html",
+    "href": "CODE_OF_CONDUCT.html",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n\n\n\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting\n\n\n\n\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.\n\n\n\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.\n\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at andy.teucher@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.\n\n\n\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community.\n\n\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by [Mozilla’s code of conduct enforcement ladder][https://github.com/mozilla/inclusion].\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#our-pledge",
+    "href": "CODE_OF_CONDUCT.html#our-pledge",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#our-standards",
+    "href": "CODE_OF_CONDUCT.html#our-standards",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Examples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
+    "href": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#scope",
+    "href": "CODE_OF_CONDUCT.html#scope",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement",
+    "href": "CODE_OF_CONDUCT.html#enforcement",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at andy.teucher@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#enforcement-guidelines",
+    "href": "CODE_OF_CONDUCT.html#enforcement-guidelines",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
+  },
+  {
+    "objectID": "CODE_OF_CONDUCT.html#attribution",
+    "href": "CODE_OF_CONDUCT.html#attribution",
+    "title": "Contributor Covenant Code of Conduct",
+    "section": "",
+    "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by [Mozilla’s code of conduct enforcement ladder][https://github.com/mozilla/inclusion].\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
+  },
+  {
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Tests 🧪",
+    "section": "",
+    "text": "Test files -&gt; tests -&gt; expectations\nfile: use_test()\ntest: test_that()\nexpectation: expect_*()\nTesting: - output - errors/warnings - side effects\nsnapshots\nhelpers - local things\nmocking\nskipping\nexecution speed - small tests"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fundamentals of R package development: 1-day course",
+    "section": "",
+    "text": "We are often faced with the need to share our code with others, or find ourselves writing similar code over and over again across different projects. In R, the fundamental unit of reusable code is a package, containing helpful functions, documentation, and sometimes sample data. This workshop will teach you the fundamentals of package development in R, using tools and principles developed and used extensively by the tidyverse team - specifically the ‘devtools’ family of packages including usethis, testthat, and roxygen2. These packages and workflows help you focus on the contents of your package rather than the minutiae of package structure.\nYou will learn the structure of a package, how to organize your code, and workflows to help you develop your package iteratively. You will learn how to write good documentation so that users can learn how to use your package, and how to use automated testing to ensure it is functioning the way you expect it to, now and into the future. You will also learn how to check your package for common problems, and how to distribute your package for others to use.\nThis will be an interactive 1-day workshop, and we will be using the RStudio IDE to work through the materials, as it has been designed to work well with the development practices we will be featuring.\n**This workshop is for you if you…*\n\nhave written several R scripts and find yourself wondering how to reuse or share the code you’ve written.\nknow how to write functions in R.\nare looking for a way to take the next step in your R programming journey."
+  },
+  {
+    "objectID": "share.html",
+    "href": "share.html",
+    "title": "Hosting and sharing 🕸",
+    "section": "",
+    "text": "use_pkgdown_github_pages()\n✔ Adding '^_pkgdown\\\\.yml$', '^docs$', '^pkgdown$' to '.Rbuildignore'\n✔ Adding 'docs' to '.gitignore'\n✔ Writing '_pkgdown.yml'\n• Modify '_pkgdown.yml'\n✔ Initializing empty, orphan 'gh-pages' branch in GitHub repo 'ateucher/libminer'\n✔ GitHub Pages is publishing from:\n• URL: 'http://ateucher.github.io/libminer/'\n• Branch: 'gh-pages'\n• Path: '/'\n✔ Saving 'r-lib/actions/examples/pkgdown.yaml@v2' to '.github/workflows/pkgdown.yaml'\n• Learn more at &lt;https://github.com/r-lib/actions/blob/v2/examples/README.md&gt;.\n✔ Recording 'http://ateucher.github.io/libminer/' as site's url in '_pkgdown.yml'\n✔ Adding 'http://ateucher.github.io/libminer/' to URL\n✔ Setting 'http://ateucher.github.io/libminer/' as homepage of GitHub repo 'ateucher/libminer'"
+  },
+  {
+    "objectID": "intro.html#what-the-course-will-look-like",
+    "href": "intro.html#what-the-course-will-look-like",
+    "title": "Introduction and motivation ✨",
+    "section": "What the course will look like",
+    "text": "What the course will look like\nWe will work together through developing a package, and at various steps along the way we will take detours to examine tools, processes, and package structure.\nWe’ll be live coding together"
+  },
+  {
+    "objectID": "intro.html#course-logistics",
+    "href": "intro.html#course-logistics",
+    "title": "Introduction and motivation ✨",
+    "section": "Course logistics",
+    "text": "Course logistics\n\nCode of Conduct\nInstructors and participants are expected to abide by our Code of Conduct.\n\n\nSchedule\n\n\nSticky notes\n\n\nTAs\n\n\nNote-taking"
+  },
+  {
+    "objectID": "ci.html",
+    "href": "ci.html",
+    "title": "Automated checking with GitHub Actions 🦾",
+    "section": "",
+    "text": "use_github_action()\nWhich action do you want to add? (0 to exit)\n(See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) \n\n1: check-standard: Run `R CMD check` on Linux, macOS, and Windows\n2: test-coverage: Compute test coverage and report to https://about.codecov.io\n3: pr-commands: Add /document and /style commands for pull requests\n\nSelection: 1\n✔ Setting active project to '/Users/andy/dev/libminer'\n✔ Creating '.github/'\n✔ Adding '^\\\\.github$' to '.Rbuildignore'\n✔ Adding '*.html' to '.github/.gitignore'\n✔ Creating '.github/workflows/'\n✔ Saving 'r-lib/actions/examples/check-standard.yaml@v2' to '.github/workflows/R-CMD-check.yaml'\n• Learn more at &lt;https://github.com/r-lib/actions/blob/v2/examples/README.md&gt;.\n✔ Adding R-CMD-check badge to 'README.Rmd'\n• Re-knit 'README.Rmd' with `devtools::build_readme()`\nbuild_readme()\nℹ Installing libminer in temporary library\nℹ Building /Users/andy/dev/libminer/README.Rmd"
+  },
+  {
     "objectID": "whole-game.html#the-libminer-package",
     "href": "whole-game.html#the-libminer-package",
     "title": "📦 Fundamentals of Package Development",
@@ -187,104 +285,6 @@
     "title": "📦 Fundamentals of Package Development",
     "section": "Commit changes to git \n",
     "text": "Commit changes to git \n\n\n\n\ngit add DESCRIPTION \\\n        LICENSE \\\n        LICENSE.md \\\n        .Rbuildignore\n        \ngit commit -m \"Add MIT license\"\n\n\n\n\n\n\n\nhttps://r-pkgs.org"
-  },
-  {
-    "objectID": "ci.html",
-    "href": "ci.html",
-    "title": "Automated checking with GitHub Actions 🦾",
-    "section": "",
-    "text": "use_github_action()\nWhich action do you want to add? (0 to exit)\n(See &lt;https://github.com/r-lib/actions/tree/v2/examples&gt; for other options) \n\n1: check-standard: Run `R CMD check` on Linux, macOS, and Windows\n2: test-coverage: Compute test coverage and report to https://about.codecov.io\n3: pr-commands: Add /document and /style commands for pull requests\n\nSelection: 1\n✔ Setting active project to '/Users/andy/dev/libminer'\n✔ Creating '.github/'\n✔ Adding '^\\\\.github$' to '.Rbuildignore'\n✔ Adding '*.html' to '.github/.gitignore'\n✔ Creating '.github/workflows/'\n✔ Saving 'r-lib/actions/examples/check-standard.yaml@v2' to '.github/workflows/R-CMD-check.yaml'\n• Learn more at &lt;https://github.com/r-lib/actions/blob/v2/examples/README.md&gt;.\n✔ Adding R-CMD-check badge to 'README.Rmd'\n• Re-knit 'README.Rmd' with `devtools::build_readme()`\nbuild_readme()\nℹ Installing libminer in temporary library\nℹ Building /Users/andy/dev/libminer/README.Rmd"
-  },
-  {
-    "objectID": "intro.html#what-the-course-will-look-like",
-    "href": "intro.html#what-the-course-will-look-like",
-    "title": "Introduction and motivation ✨",
-    "section": "What the course will look like",
-    "text": "What the course will look like\nWe will work together through developing a package, and at various steps along the way we will take detours to examine tools, processes, and package structure.\nWe’ll be live coding together"
-  },
-  {
-    "objectID": "intro.html#course-logistics",
-    "href": "intro.html#course-logistics",
-    "title": "Introduction and motivation ✨",
-    "section": "Course logistics",
-    "text": "Course logistics\n\nCode of Conduct\nInstructors and participants are expected to abide by our Code of Conduct.\n\n\nSchedule\n\n\nSticky notes\n\n\nTAs\n\n\nNote-taking"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Fundamentals of R package development: 1-day course",
-    "section": "",
-    "text": "We are often faced with the need to share our code with others, or find ourselves writing similar code over and over again across different projects. In R, the fundamental unit of reusable code is a package, containing helpful functions, documentation, and sometimes sample data. This workshop will teach you the fundamentals of package development in R, using tools and principles developed and used extensively by the tidyverse team - specifically the ‘devtools’ family of packages including usethis, testthat, and roxygen2. These packages and workflows help you focus on the contents of your package rather than the minutiae of package structure.\nYou will learn the structure of a package, how to organize your code, and workflows to help you develop your package iteratively. You will learn how to write good documentation so that users can learn how to use your package, and how to use automated testing to ensure it is functioning the way you expect it to, now and into the future. You will also learn how to check your package for common problems, and how to distribute your package for others to use.\nThis will be an interactive 1-day workshop, and we will be using the RStudio IDE to work through the materials, as it has been designed to work well with the development practices we will be featuring.\n**This workshop is for you if you…*\n\nhave written several R scripts and find yourself wondering how to reuse or share the code you’ve written.\nknow how to write functions in R.\nare looking for a way to take the next step in your R programming journey."
-  },
-  {
-    "objectID": "test.html",
-    "href": "test.html",
-    "title": "Tests 🧪",
-    "section": "",
-    "text": "Test files -&gt; tests -&gt; expectations\nfile: use_test()\ntest: test_that()\nexpectation: expect_*()\nTesting: - output - errors/warnings - side effects\nsnapshots\nhelpers - local things\nmocking\nskipping\nexecution speed - small tests"
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html",
-    "href": "CODE_OF_CONDUCT.html",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.\n\n\n\nExamples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting\n\n\n\n\nCommunity leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.\n\n\n\nThis Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.\n\n\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at andy.teucher@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident.\n\n\n\nCommunity leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community.\n\n\n\n\nThis Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by [Mozilla’s code of conduct enforcement ladder][https://github.com/mozilla/inclusion].\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#our-pledge",
-    "href": "CODE_OF_CONDUCT.html#our-pledge",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.\nWe pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#our-standards",
-    "href": "CODE_OF_CONDUCT.html#our-standards",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "Examples of behavior that contributes to a positive environment for our community include:\n\nDemonstrating empathy and kindness toward other people\nBeing respectful of differing opinions, viewpoints, and experiences\nGiving and gracefully accepting constructive feedback\nAccepting responsibility and apologizing to those affected by our mistakes, and learning from the experience\nFocusing on what is best not just for us as individuals, but for the overall community\n\nExamples of unacceptable behavior include:\n\nThe use of sexualized language or imagery, and sexual attention or advances of any kind\nTrolling, insulting or derogatory comments, and personal or political attacks\nPublic or private harassment\nPublishing others’ private information, such as a physical or email address, without their explicit permission\nOther conduct which could reasonably be considered inappropriate in a professional setting"
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
-    "href": "CODE_OF_CONDUCT.html#enforcement-responsibilities",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.\nCommunity leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#scope",
-    "href": "CODE_OF_CONDUCT.html#scope",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#enforcement",
-    "href": "CODE_OF_CONDUCT.html#enforcement",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at andy.teucher@gmail.com. All complaints will be reviewed and investigated promptly and fairly.\nAll community leaders are obligated to respect the privacy and security of the reporter of any incident."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#enforcement-guidelines",
-    "href": "CODE_OF_CONDUCT.html#enforcement-guidelines",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:\n\n\nCommunity Impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.\nConsequence: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.\n\n\n\nCommunity Impact: A violation through a single incident or series of actions.\nConsequence: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.\n\n\n\nCommunity Impact: A serious violation of community standards, including sustained inappropriate behavior.\nConsequence: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.\n\n\n\nCommunity Impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.\nConsequence: A permanent ban from any sort of public interaction within the community."
-  },
-  {
-    "objectID": "CODE_OF_CONDUCT.html#attribution",
-    "href": "CODE_OF_CONDUCT.html#attribution",
-    "title": "Contributor Covenant Code of Conduct",
-    "section": "",
-    "text": "This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.\nCommunity Impact Guidelines were inspired by [Mozilla’s code of conduct enforcement ladder][https://github.com/mozilla/inclusion].\nFor answers to common questions about this code of conduct, see the FAQ at https://www.contributor-covenant.org/faq. Translations are available at https://www.contributor-covenant.org/translations."
-  },
-  {
-    "objectID": "website.html",
-    "href": "website.html",
-    "title": "Website 🕸️",
-    "section": "",
-    "text": "use_pkgdown_github_pages()\n✔ Adding '^_pkgdown\\\\.yml$', '^docs$', '^pkgdown$' to '.Rbuildignore'\n✔ Adding 'docs' to '.gitignore'\n✔ Writing '_pkgdown.yml'\n• Modify '_pkgdown.yml'\n✔ Initializing empty, orphan 'gh-pages' branch in GitHub repo 'ateucher/libminer'\n✔ GitHub Pages is publishing from:\n• URL: 'http://ateucher.github.io/libminer/'\n• Branch: 'gh-pages'\n• Path: '/'\n✔ Saving 'r-lib/actions/examples/pkgdown.yaml@v2' to '.github/workflows/pkgdown.yaml'\n• Learn more at &lt;https://github.com/r-lib/actions/blob/v2/examples/README.md&gt;.\n✔ Recording 'http://ateucher.github.io/libminer/' as site's url in '_pkgdown.yml'\n✔ Adding 'http://ateucher.github.io/libminer/' to URL\n✔ Setting 'http://ateucher.github.io/libminer/' as homepage of GitHub repo 'ateucher/libminer'"
   },
   {
     "objectID": "r-code.html",
