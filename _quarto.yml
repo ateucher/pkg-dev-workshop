@@ -5,6 +5,12 @@ website:
   title: "📦 Fundamentals of R Package Development"
   navbar:
     background: secondary
+    right:
+      - icon: github
+        href: https://github.com/ateucher/pkg-dev-workshop
+        aria-label: GitHub
+  repo-url: https://github.com/ateucher/pkg-dev-workshop
+  repo-actions: [edit, issue]
   sidebar:
     search: true
     contents:
