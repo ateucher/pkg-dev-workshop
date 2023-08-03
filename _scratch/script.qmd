@@ -363,5 +363,5 @@ use_news_md()
 ```
 
 ```r
-use_cran_comments
+use_cran_comments()
 ```
