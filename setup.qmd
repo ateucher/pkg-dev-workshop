@@ -86,7 +86,7 @@ Check if Git is installed by running `which git` in the **Terminal**
 If `which git` didn't find Git installed:
 
 -   Download and install from <https://git-scm.com/downloads>
--   Keep all the default settings
+-   Keep all the default settings. If asked about "Adjusting your PATH environment", make sure to select "Git from the command line and also from 3rd-party software".
 -   Open RStudio. In the menus go to Tools > Global Options > Git/SVN.
 -   Check RStudio has found git under "Git executable:"
     -   You may need to click Browse and find the git executable.
@@ -137,6 +137,9 @@ usethis::create_github_token()
 -   Copy the newly generated PAT to your clipboard.
 -   Run `gitcreds::gitcreds_set()` in R and paste in your PAT when prompted.
 -   After you close the PAT webpage, you won't be able to see your PAT again! You can store it somewhere secure, such as in a password manager.
+
+### Caveat about storing PATs on Linux: 
+macOS and Windows both have built-in credential managers that will securely store your PAT, however the same does not exist in Linux. [Happy Git with R has a section on options for storing your PAT on Linux](https://happygitwithr.com/https-pat#pat-doesnt-persist-on-linux).
 
 ::: aside
 You may need to install the **`gitcreds`** package [@gitcreds].
