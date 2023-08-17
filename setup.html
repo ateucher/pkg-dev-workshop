@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -283,7 +283,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#mac" id="toc-mac" class="nav-link" data-scroll-target="#mac">Mac</a></li>
   </ul></li>
   <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
-  <li><a href="#check-link-between-r-and-github" id="toc-check-link-between-r-and-github" class="nav-link" data-scroll-target="#check-link-between-r-and-github">Check link between R and GitHub</a></li>
+  <li><a href="#check-link-between-r-and-github" id="toc-check-link-between-r-and-github" class="nav-link" data-scroll-target="#check-link-between-r-and-github">Check link between R and GitHub</a>
+  <ul class="collapse">
+  <li><a href="#caveat-about-storing-pats-on-linux" id="toc-caveat-about-storing-pats-on-linux" class="nav-link" data-scroll-target="#caveat-about-storing-pats-on-linux">Caveat about storing PATs on Linux:</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/ateucher/pkg-dev-workshop/edit/main/setup.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/ateucher/pkg-dev-workshop/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
@@ -386,7 +389,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If <code>which git</code> didn’t find Git installed:</p>
 <ul>
 <li>Download and install from <a href="https://git-scm.com/downloads" class="uri">https://git-scm.com/downloads</a></li>
-<li>Keep all the default settings</li>
+<li>Keep all the default settings. If asked about “Adjusting your PATH environment”, make sure to select “Git from the command line and also from 3rd-party software”.</li>
 <li>Open RStudio. In the menus go to Tools &gt; Global Options &gt; Git/SVN.</li>
 <li>Check RStudio has found git under “Git executable:”
 <ul>
@@ -430,6 +433,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Run <code>gitcreds::gitcreds_set()</code> in R and paste in your PAT when prompted.</li>
 <li>After you close the PAT webpage, you won’t be able to see your PAT again! You can store it somewhere secure, such as in a password manager.</li>
 </ul>
+<section id="caveat-about-storing-pats-on-linux" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="caveat-about-storing-pats-on-linux">Caveat about storing PATs on Linux:</h3>
+<p>macOS and Windows both have built-in credential managers that will securely store your PAT, however the same does not exist in Linux. <a href="https://happygitwithr.com/https-pat#pat-doesnt-persist-on-linux">Happy Git with R has a section on options for storing your PAT on Linux</a>.</p>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p>You may need to install the <strong><code>gitcreds</code></strong> package <span class="citation" data-cites="gitcreds">[@gitcreds]</span>.</p>
@@ -461,6 +467,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
