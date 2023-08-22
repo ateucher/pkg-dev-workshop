@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/description.html</loc>
-    <lastmod>2023-08-17T19:14:52.239Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/share.html</loc>
-    <lastmod>2023-08-17T19:14:51.579Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/whole-game.html</loc>
-    <lastmod>2023-08-17T19:14:50.023Z</lastmod>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/CODE_OF_CONDUCT.html</loc>
+    <lastmod>2023-08-22T00:26:39.244Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ateucher/pkg-dev-workshop/setup.html</loc>
-    <lastmod>2023-08-17T19:14:44.779Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/index.html</loc>
-    <lastmod>2023-08-17T19:14:41.887Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/create-check.html</loc>
-    <lastmod>2023-08-17T19:14:41.179Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/intro.html</loc>
-    <lastmod>2023-08-17T19:14:40.287Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/understanding-pkgs.html</loc>
-    <lastmod>2023-08-17T19:14:39.599Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/dependencies.html</loc>
-    <lastmod>2023-08-17T19:14:37.219Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/check.html</loc>
-    <lastmod>2023-08-17T19:14:39.275Z</lastmod>
+    <lastmod>2023-08-22T00:26:38.432Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ateucher/pkg-dev-workshop/documentation.html</loc>
-    <lastmod>2023-08-17T19:14:39.935Z</lastmod>
+    <lastmod>2023-08-22T00:26:34.648Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/vignettes.html</loc>
-    <lastmod>2023-08-17T19:14:40.839Z</lastmod>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/create-check.html</loc>
+    <lastmod>2023-08-22T00:26:34.004Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/check.html</loc>
+    <lastmod>2023-08-22T00:26:33.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/intro.html</loc>
+    <lastmod>2023-08-22T00:26:32.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/understanding-pkgs.html</loc>
+    <lastmod>2023-08-22T00:26:25.604Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/dependencies.html</loc>
+    <lastmod>2023-08-22T00:26:24.912Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ateucher/pkg-dev-workshop/r-code.html</loc>
-    <lastmod>2023-08-17T19:14:41.519Z</lastmod>
+    <lastmod>2023-08-22T00:26:22.292Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/CODE_OF_CONDUCT.html</loc>
-    <lastmod>2023-08-17T19:14:42.347Z</lastmod>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/description.html</loc>
+    <lastmod>2023-08-22T00:26:23.328Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/index.html</loc>
+    <lastmod>2023-08-22T00:26:25.284Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/whole-game.html</loc>
+    <lastmod>2023-08-22T00:26:30.224Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ateucher/pkg-dev-workshop/ci.html</loc>
-    <lastmod>2023-08-17T19:14:45.343Z</lastmod>
+    <lastmod>2023-08-22T00:26:32.804Z</lastmod>
   </url>
   <url>
-    <loc>https://github.com/ateucher/pkg-dev-workshop/test.html</loc>
-    <lastmod>2023-08-17T19:14:51.087Z</lastmod>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/vignettes.html</loc>
+    <lastmod>2023-08-22T00:26:33.684Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/ateucher/pkg-dev-workshop/about.html</loc>
-    <lastmod>2023-08-17T19:14:51.911Z</lastmod>
+    <lastmod>2023-08-22T00:26:34.324Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/share.html</loc>
+    <lastmod>2023-08-22T00:26:35.160Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/ateucher/pkg-dev-workshop/test.html</loc>
+    <lastmod>2023-08-22T00:26:38.760Z</lastmod>
   </url>
 </urlset>
